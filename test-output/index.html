@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,9 +20,9 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -50,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rajesh.pathak\AppData\Local\Temp\testng-eclipse-934127277\testng-customsuite.xml</span>
+                    <span>C:\Users\rajesh.pathak\AppData\Local\Temp\testng-eclipse-459386938\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,88 +128,53 @@
                   <a name="verifyUiLaunch">
                   </a> <!-- verifyUiLaunch -->
                   <span class="method-name">verifyUiLaunch</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 117.0.5938.152 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.152)
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;LP2-AP-51992450&apos;, ip: &apos;172.29.96.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00DDA813+48355]
-	(No symbol) [0x00D6C4B1]
-	(No symbol) [0x00C75358]
-	(No symbol) [0x00C961AC]
-	(No symbol) [0x00C91EF3]
-	(No symbol) [0x00C90579]
-	(No symbol) [0x00CC0C55]
-	(No symbol) [0x00CC093C]
-	(No symbol) [0x00CBA536]
-	(No symbol) [0x00C982DC]
-	(No symbol) [0x00C993DD]
-	GetHandleVerifier [0x0103AABD+2539405]
-	GetHandleVerifier [0x0107A78F+2800735]
-	GetHandleVerifier [0x0107456C+2775612]
-	GetHandleVerifier [0x00E651E0+616112]
-	(No symbol) [0x00D75F8C]
-	(No symbol) [0x00D72328]
-	(No symbol) [0x00D7240B]
-	(No symbol) [0x00D64FF7]
-	BaseThreadInitThunk [0x76F0FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77E57B1E+286]
-	RtlGetAppContainerNamedObjectPath [0x77E57AEE+238]
-
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\RAJESH~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1f933c3f86f88e979be8abeea084bdf
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at e2e.uiAutomationNew.AppTest.verifyUiLaunch(AppTest.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:828)
+	at e2e.uiAutomationNew.AppTest.verifyUiLaunch(AppTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -223,7 +187,7 @@ remote stacktrace: Backtrace:
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rajesh.pathak\AppData\Local\Temp\testng-eclipse-934127277\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rajesh.pathak\AppData\Local\Temp\testng-eclipse-459386938\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -276,12 +240,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyUiLaunch')
 data.setCell(0, 2, 'e2e.uiAutomationNew.AppTest')
-data.setCell(0, 3, 5307);
+data.setCell(0, 3, 7731);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -319,5 +283,4 @@ return data;
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

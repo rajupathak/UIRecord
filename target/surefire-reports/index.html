@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
               <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
                     <span>C:\wdio Automation stuffs\MeetingClientAutomationWorkSpace\uiAutomationNew\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="e2e.uiAutomationNew.AppTest" hash-for-method="verifyUiLaunch">verifyUiLaunch</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="e2e.uiAutomationNew.AppTest" class="method navigator-link" hash-for-method="verifyUiLaunch">verifyUiLaunch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,8 +141,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;e2e.uiAutomationNew.AppTest&quot;/&gt;
     &lt;/classes&gt;
@@ -188,12 +188,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyUiLaunch')
 data.setCell(0, 2, 'e2e.uiAutomationNew.AppTest')
-data.setCell(0, 3, 11539);
+data.setCell(0, 3, 12895);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
