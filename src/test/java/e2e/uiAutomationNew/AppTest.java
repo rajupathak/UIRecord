@@ -49,13 +49,16 @@ public class AppTest {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", recordButton);
 
-		Thread.sleep(2000);
+		Thread.sleep(2400000); // 40 minutes in milliseconds
+
 		WebElement pause = driver.findElement(By.xpath("//div[@class='btn-record active']"));
 		WebElement save = driver.findElement(By.xpath("//div[@class='save-processing']"));
 		js.executeScript("arguments[0].click();", pause);
-		Thread.sleep(2000);
+		Thread.sleep(300000); // 5 minutes in milliseconds
+
 		js.executeScript("arguments[0].click();", save);
-		Thread.sleep(2000);
+		Thread.sleep(300000); // 5 minutes in milliseconds
+
 		/*
 		 * // Schedule a task to keep checking recording status for one hour
 		 * ScheduledExecutorService executorService =
